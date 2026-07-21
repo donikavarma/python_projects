@@ -24,4 +24,4 @@ This project allows users to generate secure passwords with options for:
   /nOpen your browser and go to:
     http://127.0.0.1:5000
 
-Output looks like this : ![Preview](preview.png)
+Output looks like this : ![Preview](./preview.png)
