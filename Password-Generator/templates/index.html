@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator - Hacker Mode</title>
+
+    <style>
+        body {
+            background: #000;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .terminal {
+            width: 500px;
+            background: #000;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .terminal-title {
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            background: #001a00;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-family: inherit;
+        }
+
+        input[type="checkbox"] {
+            accent-color: #00ff00;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background: #00ff00;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #00cc00;
+        }
+
+        .output {
+            margin-top: 25px;
+            padding: 15px;
+            background: #001a00;
+            border: 1px solid #00ff00;
+            font-size: 18px;
+            word-wrap: break-word;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background: #00ff00;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="terminal">
+    <div class="terminal-title">[ PASSWORD GENERATOR v1.0 ]</div>
+
+    <form method="POST">
+        <label>> Enter password length:</label>
+        <input type="number" name="length" min="4" required>
+
+        <label><input type="checkbox" name="numbers"> > Include numbers</label>
+        <label><input type="checkbox" name="specials"> > Include special characters</label>
+        <label><input type="checkbox" name="uppercase"> > Include uppercase letters</label>
+
+        <button type="submit">GENERATE</button>
+    </form>
+
+    {% if password %}
+    <div class="output">
+        > Generated password:<br><br>
+        {{ password }}<span class="cursor"></span>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
