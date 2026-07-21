@@ -13,13 +13,15 @@ This project allows users to generate secure passwords with options for:
   - HTML / CSS
 
 **Installation & Running the App**
-  Clone the repository:
+  /nClone the repository:
     git clone https://github.com/donikavarma/python_projects.git
-  Navigate to the project folder:
+  /nNavigate to the project folder:
     cd python_projects/pswd-generator
-  Install dependencies:
+  /nInstall dependencies:
     pip install -r requirements.txt
-  Run the Flask app:
+  /nRun the Flask app:
     python app.py
-  Open your browser and go to:
+  /nOpen your browser and go to:
     http://127.0.0.1:5000
+
+Output looks like this : ![Preview](preview.png)
