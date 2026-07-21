@@ -12,14 +12,6 @@ This project allows users to generate secure passwords with options for:
   - Flask
   - HTML / CSS
 
-**Project Structure**
-  python_projects/
-│
-└── pswd-generator/
-    ├── app.py
-    ├── requirements.txt
-    └── templates/
-        └── index.html
 **Installation & Running the App**
   Clone the repository:
     git clone https://github.com/donikavarma/python_projects.git
