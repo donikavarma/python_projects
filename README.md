@@ -28,6 +28,8 @@ Includes:
 
 Folder: `Password-Generator/`
 
+---
+
 ### 3. Alarm Clock (Tkinter + Pygame)
 A modern, visually appealing alarm clock application built using Python.
 Includes:
