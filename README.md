@@ -28,6 +28,17 @@ Includes:
 
 Folder: `Password-Generator/`
 
+3. Alarm Clock (Tkinter + Pygame)
+A modern, visually appealing alarm clock application built using Python.
+Includes:
+  
+- Popup alarm notification  
+- MP3 alarm sound playback  
+- “Stop Alarm” button that closes the popup and stops the alarm  
+- Smooth threading so the UI never freezes  
+
+Folder: AlarmClock/
+
 ---
 
 ## 📈 Goals for This Repository
